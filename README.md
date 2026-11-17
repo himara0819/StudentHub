@@ -1,56 +1,175 @@
-# Welcome to your Expo app 👋
+# 🎓 StudentHub – Mini Student Hub Mobile Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A simple and interactive student mobile application developed using **React Native and Expo** as part of the Mobile Application Development practical tutorial at the University of Kelaniya.
 
-## Get started
+The application demonstrates mobile navigation, reusable UI components, interactive elements, and background task simulation using a live-updating clock.
 
-1. Install dependencies
+## 📱 Project Overview
 
-   ```bash
-   npm install
-   ```
+StudentHub is a mini student hub application that provides a dashboard, a digital student ID card, and a live clock through a simple bottom-tab navigation interface.
 
-2. Start the app
+## ✨ Features
 
-   ```bash
-   npx expo start
-   ```
+### 1. Home Dashboard
+- Welcome screen for students.
+- Interactive Digital ID Card navigation button.
+- Scrollable interface using `ScrollView`.
+- Touch interaction using `Pressable`.
 
-In the output, you'll find options to open the app in a
+### 2. Digital Student ID Card
+- Displays a student profile image.
+- Shows student information.
+- Uses React Native `Image`, `Text`, and `View` components.
+- Local image asset integration.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+### 3. Live Clock
+- Displays the current system time.
+- Automatically updates every second.
+- Uses React Hooks for state management.
+- Demonstrates timer management and cleanup.
 
-You can start developing by editing the files inside the **src/app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### 4. Navigation
+- Bottom Tab Navigation using Expo Router.
+- Stack Navigation for the Dashboard and ID Card screens.
+- Navigation between Home and Live Clock.
 
-## Get a fresh project
+## 🛠️ Technologies Used
 
-When you're ready, run:
+| Technology | Purpose |
+|---|---|
+| React Native | Mobile application development |
+| Expo | Development and testing environment |
+| TypeScript | Application programming |
+| Expo Router | File-based navigation |
+| React Hooks | State and lifecycle management |
+| Expo Vector Icons | Navigation icons |
+| Git & GitHub | Version control and project hosting |
+| Expo Go | Mobile application testing |
 
-```bash
-npm run reset-project
+## 📂 Project Structure
+
+```text
+StudentHub/
+│
+├── assets/
+│   └── images/
+│       └── user.png
+│
+├── Output_Screens/
+│   ├── 01_Home.png
+│   ├── 02_ID_Card.png
+│   └── 03_Live_Clock.png
+│
+├── src/
+│   └── app/
+│       ├── (home)/
+│       │   ├── _layout.tsx
+│       │   ├── index.tsx
+│       │   └── details.tsx
+│       │
+│       ├── _layout.tsx
+│       ├── index.tsx
+│       └── clock.tsx
+│
+├── package.json
+├── package-lock.json
+├── tsconfig.json
+├── app.json
+└── README.md
 ```
 
-This command will move the starter code to the **example** directory and create a blank **src/app** directory where you can start developing.
+## ⚙️ Installation and Setup
 
-### Other setup steps
+### Prerequisites
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+- Node.js
+- npm
+- Visual Studio Code
+- Expo Go (Android or iOS)
+- Git
 
-## Learn more
+### Step 1 – Clone the Repository
 
-To learn more about developing your project with Expo, look at the following resources:
+```bash
+git clone https://github.com/himara0819/StudentHub.git
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### Step 2 – Navigate to the Project
 
-## Join the community
+```bash
+cd StudentHub
+```
 
-Join our community of developers creating universal apps.
+### Step 3 – Install Dependencies
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+```bash
+npm install
+```
+
+### Step 4 – Install Expo Vector Icons
+
+```bash
+npx expo install @expo/vector-icons
+```
+
+### Step 5 – Start the Development Server
+
+```bash
+npx expo start
+```
+
+### Step 6 – Run the Application
+
+1. Install Expo Go on your mobile device.
+2. Start the Expo development server.
+3. Scan the displayed QR code using Expo Go.
+4. Wait for the application to load.
+
+**Note:** Your computer and mobile device should be connected to the same Wi-Fi network when using LAN mode.
+
+## 📸 Application Screenshots
+
+Application screenshots are available in the `Output_Screens/` directory.
+
+| Screen | Screenshot |
+|---|---|
+| Home Dashboard | `Output_Screens/01_Home.png` |
+| Digital ID Card | `Output_Screens/02_ID_Card.png` |
+| Live Clock | `Output_Screens/03_Live_Clock.png` |
+
+## 📚 Learning Objectives
+
+This practical demonstrates the following concepts:
+
+- Bottom Tab Navigation.
+- Stack Navigation.
+- File-Based Routing with Expo Router.
+- ScrollView and Pressable components.
+- React Native component styling.
+- Local image integration.
+- `useState` Hook.
+- `useEffect` Hook.
+- `setInterval()` and `clearInterval()`.
+- Background task simulation.
+
+## 🎯 Academic Information
+
+**Module:** Mobile Application Development  
+**Practical:** Practical Tutorial 03  
+**Project:** Mini Student Hub  
+**Department:** Department of Statistics & Computer Science  
+**University:** University of Kelaniya  
+**Academic Year:** 2024/2025 – Semester 2
+
+## 👨‍💻 Developer
+
+**GitHub:** [@himara0819](https://github.com/himara0819)
+
+## 🔗 Repository
+
+[https://github.com/himara0819/StudentHub](https://github.com/himara0819/StudentHub)
+
+---
+
+⭐ Developed as part of the Mobile Application Development practical coursework.
+
